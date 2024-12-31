@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: ;
+}
+body {
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  height: 100vh;
+  background: black; /* All-black background */
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.surprise-container {
+  width: 95%;
+  max-height: 80vh;
+}
+
+.message,
+.final-message {
+  padding: 20px;
+  border-radius: 15px;
+  background: transparent;
+  animation: popIn 2s ease-out, fadeIn 2s ease-in-out;
+  transform: scale(0.9);
+  font-size: 0.4rem;
+  height: 50vh;
+}
+
+.illustration {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out; /* Smooth fade-in animation */
+  border-radius: 10px; /* Rounded corners for illustrations */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Pop-in animation for the message */
+@keyframes popIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Button styling */
+.button-container > button {
+  padding: 10px 20px;
+  background-color: black;
+  border: solid #262626 1.5px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  margin: 0.8rem;
+}
+
+button:hover {
+}
+
+h1 {
+  font-size: 0.8rem;
+  margin: 10px 0;
+  color: pink;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.circle {
+  display: inline-block;
+  width: 13vh; /* Adjust size */
+  height: auto; /* Adjust size */
+  line-height: 100px; /* Center text vertically */
+  border: 3px solid pink;
+  border-radius: 50%;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;
+  color: #e3e3e3; /* Text color */
+  margin-right: 10px; /* Space after the circle */
+}
+
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e8e8e8;
+}
